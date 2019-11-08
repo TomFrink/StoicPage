@@ -5,7 +5,6 @@
       <h1>'{{ quote.quote }}'</h1>
       <hr />
       <p>- {{ quote.person }}</p>
-      <!-- This button code is ugly. There is a better way -->
       <button>
         <a
           :href="
@@ -26,15 +25,10 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
 import { db } from "@/db";
 
 export default {
   name: "home",
-  components: {
-    // HelloWorld
-  },
   data() {
     return {
       quotes: []
