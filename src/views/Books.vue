@@ -30,17 +30,21 @@ export default {
 <style lang="scss" scoped>
 a:link {
   text-decoration: none;
+  color: #2c3e50;
 }
 
 a:visited {
   text-decoration: none;
+  color: #2c3e50;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #42b983;
 }
 
 a:active {
   text-decoration: underline;
+  color: #42b983;
 }
 </style>
