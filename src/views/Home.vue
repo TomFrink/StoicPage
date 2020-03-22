@@ -26,7 +26,7 @@
 import { db } from "@/db";
 
 export default {
-  name: "home",
+  name: "Home",
   data() {
     return {
       quotes: []

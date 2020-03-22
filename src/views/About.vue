@@ -1,13 +1,16 @@
 <template>
   <main class="about">
     <h1>About Stoic Page</h1>
-    <p>
-      This page is a collection of Stoic wisdom.
-    </p>
+    <p>This page is a collection of Stoic wisdom.</p>
     <p>
       Nothing More.
-      <br />
-      Nothing Less.
+      <br />Nothing Less.
     </p>
   </main>
 </template>
+
+<script>
+export default {
+  name: "About"
+};
+</script>
