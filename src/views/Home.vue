@@ -4,7 +4,7 @@
       <hr />
       <h1>'{{ quote.quote }}'</h1>
       <hr />
-      <p>- {{ quote.person }}</p>
+      <h3>- {{ quote.person }}</h3>
       <button>
         <a
           :href="
@@ -15,9 +15,7 @@
               '&hashtags=stoicpage'
           "
           target="_blank"
-        >
-          Tweet
-        </a>
+        >Tweet</a>
       </button>
       <br />
     </article>
@@ -42,7 +40,7 @@ export default {
 
 <style scoped>
 article {
-  padding: 10px;
+  padding: 50px;
   border-style: outset;
   margin: 25px;
 }
@@ -62,5 +60,11 @@ button a:hover {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 </style>
