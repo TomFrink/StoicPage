@@ -30,4 +30,7 @@
     }
   }
 }
+html, body{
+  background-color: whitesmoke;
+}
 </style>

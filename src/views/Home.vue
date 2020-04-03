@@ -43,6 +43,7 @@ article {
   padding: 50px;
   border-style: outset;
   margin: 25px;
+  border-width: 25px;
 }
 button {
   background-color: #1b95e0;
