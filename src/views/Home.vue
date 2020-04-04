@@ -43,6 +43,7 @@ article {
   padding: 50px;
   border-style: outset;
   margin: 25px;
+  margin-bottom: 150px;
   border-width: 25px;
 }
 button {
