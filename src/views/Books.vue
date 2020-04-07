@@ -47,4 +47,10 @@ a:active {
   text-decoration: underline;
   color: #42b983;
 }
+a > img {
+  max-width: 100%
+}
+article {
+  margin-bottom:10vh;
+}
 </style>
