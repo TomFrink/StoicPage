@@ -15,7 +15,7 @@
       <p style="white-space: pre-line;">
         <b>{{ quote }}</b>
       </p>
-      <button onclick="addQuote">Add Quote</button>
+      <button @click="addQuote">Add Quote</button>
     </section>
     <section>
       <ul id="quotes">
@@ -38,26 +38,28 @@ export default {
       if (!value) return "";
       value = new Date(value * 1000).toDateString();
       return value;
-    },
+    }
   },
   data() {
     return {
       things: [],
       person: "",
-      quote: "",
+      quote: ""
     };
   },
   firestore() {
     return {
-      things: db.collection("quotes").orderBy("time", "desc"),
+      things: db.collection("quotes").orderBy("time", "desc")
     };
   },
   methods: {
-    addQuote(person, quote) {
+    addQuote: function() {
       const time = new Date();
+      const person = this.person;
+      const quote = this.quote;
       db.collection("quotes").add({ person, quote, time });
-    },
-  },
+    }
+  }
 };
 </script>
 
