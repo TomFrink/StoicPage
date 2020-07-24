@@ -17,6 +17,7 @@
       </p>
       <button class="addquote" @click="addQuote">Add Quote</button>
     </section>
+    <hr />
     <section class="output">
       <ul id="quotes">
         <li v-for="thing in things" :key="thing.quote">
@@ -107,5 +108,18 @@ button.addquote {
   margin: 4px 2px;
   cursor: pointer;
   width: 100%;
+}
+hr {
+  margin: 50px;
+}
+/* output section */
+ul {
+  list-style-type: none;
+  background: #3399ff;
+  padding: 20px;
+}
+ul li {
+  background: #cce5ff;
+  margin: 5px;
 }
 </style>
