@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1>Admin Section</h1>
-    <section>
-      <input v-model="person" placeholder="Person" />
+    <section class="input">
+      <input v-model="person" placeholder="Person" type="text" />
       <br />
       <textarea v-model="quote" placeholder="Quote"></textarea>
       <p>
@@ -15,9 +15,9 @@
       <p style="white-space: pre-line;">
         <b>{{ quote }}</b>
       </p>
-      <button @click="addQuote">Add Quote</button>
+      <button class="addquote" @click="addQuote">Add Quote</button>
     </section>
-    <section>
+    <section class="output">
       <ul id="quotes">
         <li v-for="thing in things" :key="thing.quote">
           {{ thing.time.seconds | dater }} - {{ thing.quote }} by
@@ -63,4 +63,49 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+/* input section */
+section.input {
+  text-align: center;
+}
+/* person input */
+input[type="text"] {
+  width: 100%;
+  height: 50px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 24px;
+  text-align: center;
+}
+input[type="text"]:focus {
+  border: 3px solid #555;
+}
+/* quote input */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  font-size: 24px;
+  text-align: center;
+}
+/* Add Quote Button */
+button.addquote {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+</style>
