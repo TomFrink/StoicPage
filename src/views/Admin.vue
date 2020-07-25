@@ -21,8 +21,9 @@
     <section class="output">
       <ul id="quotes">
         <li v-for="thing in things" :key="thing.quote">
-          {{ thing.time.seconds | dater }} - {{ thing.quote }} by
-          {{ thing.person }}
+          <b>{{ thing.time.seconds | dater }}</b>
+          <p>{{ thing.quote }}</p>
+          <i>by {{ thing.person }}</i>
         </li>
       </ul>
     </section>
@@ -113,7 +114,10 @@ hr {
   margin: 50px;
 }
 /* output section */
+@import url("https://fonts.googleapis.com/css?family=Lancelot");
 ul {
+  font-family: Lancelot;
+  font-size: 20px;
   list-style-type: none;
   background: #3399ff;
   padding: 20px;
@@ -121,5 +125,7 @@ ul {
 ul li {
   background: #cce5ff;
   margin: 5px;
+  padding: 10px;
+  text-align: start;
 }
 </style>
