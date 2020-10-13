@@ -1,37 +1,7 @@
-# stoicpage
+This project was built using Vue
 
-## Project setup
+It was a fun learning experience. 
 
-```
-npm install
-```
+I learned how to use Google Firebase to build the pages and Admin section. 
 
-### Compiles and hot-reloads for development
-
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### Build & Deploy to Firebase
-
-```
-npm run lint
-npm run build
-firebase deploy
-```
+I learned how to interact with a Public API (Twitter) to send tweets.
