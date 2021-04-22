@@ -9,9 +9,11 @@
         <i>Person is:</i>
         <b>{{ person }}</b>
       </p>
-      <span>
-        <i>Quote is:</i>
-      </span>
+      <p>
+        <span>
+          <i>Quote is:</i>
+        </span>
+      </p>
       <p style="white-space: pre-line;">
         <b>{{ quote }}</b>
       </p>
