@@ -12,7 +12,7 @@
               quote.quote +
               '%20-' +
               quote.person +
-              '&hashtags=stoicpage'
+              '&hashtags=stoic.page'
           "
           target="_blank"
         >Tweet</a>
